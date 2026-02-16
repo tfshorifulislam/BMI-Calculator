@@ -1,1 +1,116 @@
-@import "tailwindcss"
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ffe5ec;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main{
+    background-image: linear-gradient(#ff0248, #ff6d31);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#main h1{
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+form{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+form input{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    background-image: linear-gradient(#ff4a69, #ff7060);
+}
+
+input::placeholder{
+    color: white;
+    opacity: 50%;
+}
+form input:focus{
+    outline: none;
+}
+#button{
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.result{
+    /* display: none; */
+}
+.result h2{
+    font-size: 50px;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.info h4,
+.result h4{
+    color: white;
+    font-size: 24px;
+    
+}
+
+.info p{
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Remove spinner arrows */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
